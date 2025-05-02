@@ -1,0 +1,18 @@
+body {
+    background-color: whitesmoke;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+
+    }
+img {
+    width: 300;
+    height: 200;
+}

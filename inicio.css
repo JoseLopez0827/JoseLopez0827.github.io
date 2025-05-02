@@ -1,0 +1,270 @@
+body{ 
+
+    background-image: url('https://resources.diariolibre.com/images/binrepository/kitipo-en-nueva-york-periodico-the-new-york-times_17290571_20210922223349.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body::before {
+    content: '';                                         
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px) brightness(0.7);
+    z-index: -1;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: #fff;
+    margin: 20px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+.descripcion {
+    font-size: 1.2em;
+    font-weight: bold;
+    max-width: 600px;
+    color: #333;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+nav a {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: #555;
+}
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contenedor img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+h3, h4 {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+a.categoria {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+a.categoria:hover {
+    background-color: #555;
+}
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+.redes-sociales a:hover{
+    transform: scale(1.2);
+    
+    } 
+    
+    .redes-sociales  {
+    display:flex ;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    }
+    
+    .redes-sociales a {
+    color:white;
+    font-size :1.5em ;
+    transition:transform 0.3s ease;
+    }
+
+.busqueda{
+margin: 10px 0;
+display: flex;
+justify-content: center;
+
+}
+.busqueda input[type="text"]{
+padding: 8px;
+width: 200px;
+border:1px solid #333;
+border-radius :4px ;
+}
+
+.busqueda button {
+padding: 8px 12px;
+background-color: #333;
+color: white;
+border: none;
+border-radius: 4px;
+margin-left: 5px;
+cursor: pointer;
+
+}
+.logo{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+}
+.carousel {
+    position: relative;
+    width: 100%; /* Ocupar toda la parte superior */
+    max-width: 100%; /* Asegurar que no tenga límites */
+    height: 150px; /* Altura fija */
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* Contenedor de las imágenes del carrusel */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilos de las imágenes del carrusel */
+.carousel-images img {
+    width: 200px; /* Tamaño pequeño */
+    height: 150px; /* Mantiene proporción */
+    object-fit: contain; /* Evita distorsión */
+    margin: 0 10px; /* Espaciado entre imágenes */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Botón izquierdo */
+.carousel-button.prev {
+    left: 15px;
+}
+
+/* Botón derecho */
+.carousel-button.next {
+    right: 15px;
+}
+.info-producto {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background-color: #fffbe6; /* Beige claro */
+    border-radius: 10px;
+    text-align: center;
+    display: none; /* Inicialmente no se muestra */
+}
+.info-producto h3 {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.info-producto p {
+    font-size: 18px;
+    color: #0e0d0d;
+}
+#cart {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#cart-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
