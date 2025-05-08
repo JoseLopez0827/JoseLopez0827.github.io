@@ -1,4 +1,4 @@
-body{ 
+body{  
 
     background-image: url('https://resources.diariolibre.com/images/binrepository/kitipo-en-nueva-york-periodico-the-new-york-times_17290571_20210922223349.jpg');
     background-size: cover;
@@ -49,12 +49,12 @@ h1 {
 }
 nav {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     margin-bottom: 30px;
     padding: 10px;
 }
 nav a {
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: #333;
     color: white;
     border-radius: 5px;
@@ -268,3 +268,21 @@ cursor: pointer;
     font-size: 20px;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      flex-direction: column;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+      

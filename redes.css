@@ -16,3 +16,21 @@ img {
     width: 300;
     height: 200;
 }
+
+@media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      flex-direction: column;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+      

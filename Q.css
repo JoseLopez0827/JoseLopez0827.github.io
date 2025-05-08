@@ -60,3 +60,21 @@ h1 {
 .producto a:hover {
     background-color: #555;
 }
+
+@media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      flex-direction: column;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+      
