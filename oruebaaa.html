@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRL CHIPEO SHOP</title>
+    <link rel="stylesheet" href="inicio.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Animaciones para los botones */
+        button {
+            transition: all 0.3s ease;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #ff6600;
+            color: white;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+            transform: scale(1.1);
+        }
+
+        .menu-content a:hover {
+            color: #ff4500;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IRL CHIPEO SHOP</h1>
+        <img src="C:/Users/ander/Downloads/IRL CHIPEO LOGO.png" alt="Logo IRL CHIPEO" class="logo">
+        <div class="carrito">
+            <button id="verCarrito">🛒 Carrito (<span id="contadorCarrito">0</span>)</button>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="menu">
+            <button class="menu-btn">Categorías</button>
+            <div class="menu-content">
+                <a href="subwoofers.html">Subwoofers</a>
+                <a href="vocales.html">Vocales</a>
+                <a href="drivers.html">Drivers</a>
+                <a href="guia de ondas.html">Guías de Ondas</a>
+                <a href="tweeters.html">Tweeters</a>
+                <a href="radios.html">Radios</a>
+                <a href="amplificadores.html">Amplificadores</a>
+                <a href="equalizers.html">Equalizadores</a>
+                <a href="crossovers.html">Crossovers</a>
+                <a href="la.html">LA</a>
+                <a href="medusa.html">Medusa</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="descripcion">
+        <p>AQUÍ PODRÁS ENCONTRAR TODO LO QUE NECESITAS PARA TU PROYECTO MUSICAL, DALE VIDA A TU PASIÓN MUSICAL</p>
+    </div>
+
+    <div class="busqueda">
+        <input id="search-input" type="text" placeholder="Buscar productos...">
+        <button onclick="filtrarProductos()">Buscar</button>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <div class="producto">
+                <img src="https://www.rdcarshow.com/wp-content/uploads/2024/06/21IPAL_1.webp" alt="Imagen 1">
+                <h3>B&C 21 Ipal</h3>
+                <p>21 ipal</p>
+                <p>US$1,799.00</p>
+                <button onclick="agregarAlCarrito('B&C 21 Ipal', 1799.00)">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCarrito" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarCarrito()">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="listaCarrito"></ul>
+            <p>Total: $<span id="totalCarrito">0.00</span></p>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>.
+    </div>
+
+    <footer>
+        <p>&copy; IRL CHIPEO | <a href="mision.html">MISIÓN, VISIÓN Y VALORES</a> | <a href="contacto.html">Contacto</a> | <a href="nosotros.html">Conócenos</a> | <a href="redes.html">Redes Sociales</a></p>
+    </footer>
+</body>
+</html>
