@@ -1,0 +1,120 @@
+ body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    .product-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+
+    .product-image {
+      flex: 1 1 400px;
+    }
+
+    .product-image img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 107, 0, 0.3);
+    }
+
+    .product-info {
+      flex: 1 1 400px;
+    }
+
+    .product-info h1 {
+      font-size: 32px;
+      color: #ff6b00;
+      margin-bottom: 20px;
+    }
+
+    .product-info p {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .price {
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .product-info button {
+      background-color: #ff6b00;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-info button:hover {
+      background-color: #e85d00;
+    }
+
+    .product-section {
+      margin-top: 60px;
+    }
+
+    .product-section h2 {
+      font-size: 24px;
+      color: #ff6b00;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ff6b00;
+      display: inline-block;
+    }
+
+    .product-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .product-section ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+      font-size: 16px;
+    }
+
+    .product-section table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .product-section table td {
+      padding: 10px 15px;
+      border-bottom: 1px solid #333;
+    }
+
+    @media screen and (max-width: 768px) {
+      .top-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .product-info {
+        margin-top: 30px;
+      }
+
+      .product-info h1 {
+        font-size: 26px;
+      }
+    }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRL CHIPEO - Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .seccion-contacto {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .seccion-contacto h2 {
+            font-size: 1.8em;
+            color: #333;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .seccion-contacto p {
+            font-size: 1.1em;
+            color: #666;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .formulario input, .formulario textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+        }
+        .formulario button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        .formulario button:hover {
+            background-color: #555;
+        }
+        .contacto-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contacto</h1>
+
+    <div class="seccion-contacto">
+        <h2>Déjanos un Mensaje</h2>
+        <form class="formulario">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo Electrónico" required>
+            <textarea placeholder="Tu Mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contacto-info">
+            <h3>Información de Contacto</h3>
+            <p>Email: contacto@irlchipeo.com</p>
+            <p>Teléfono: +1 809 424 0990</p>
+        </div>
+    </div>
+</body>
+</html>
